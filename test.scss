@@ -1,0 +1,80 @@
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #333;
+$brand-color: green;
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+}
+
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li { display: inline-block; }
+
+  a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+  }
+}
+
+.main {
+  .main__top {
+    .button {
+      background-color: blue;
+    }
+  }
+
+  .main__bottom {
+    background-color: red;
+  }
+}
+
+.home-anchor {
+  color: green;
+  &:hover {
+    color: red;
+  }
+  &:visited, &:focus {
+    color: purple;
+  }
+}
+
+.login-form {
+  &__id-input {
+    color: $brand-color;
+  }
+  &--vip &__id-input {
+    color: gold;
+  }
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+.box { @include border-radius(10px); }
+.cell { @include border-radius(5px); }
+
+@mixin media($width) {
+  @media only screen and (max-width: $width) {
+    @content;
+  }
+}
+
+.main {
+  background-color: $brand-color;
+  @include media(320px) {
+    background: red;
+  }
+  width: 320px * 2;
+}
+

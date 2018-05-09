@@ -1,0 +1,74 @@
+body {
+  font: 100% Helvetica, sans-serif;
+  color: #333;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+}
+
+.main .main__top .button {
+  background-color: blue;
+}
+
+.main .main__bottom {
+  background-color: red;
+}
+
+.home-anchor {
+  color: green;
+}
+
+.home-anchor:hover {
+  color: red;
+}
+
+.home-anchor:visited, .home-anchor:focus {
+  color: purple;
+}
+
+.login-form__id-input {
+  color: green;
+}
+
+.login-form--vip .login-form__id-input {
+  color: gold;
+}
+
+.box {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.cell {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.main {
+  background-color: green;
+  width: 640px;
+}
+
+@media only screen and (max-width: 320px) {
+  .main {
+    background: red;
+  }
+}
+/*# sourceMappingURL=test.css.map */
